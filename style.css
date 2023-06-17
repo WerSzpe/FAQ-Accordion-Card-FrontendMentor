@@ -3,7 +3,7 @@
     --vddesblue: hsl(238, 29%, 16%);
     --softred: hsl(14,88%, 65%);
     --softviolet: hsl(273, 75%, 66%);
-    --softblue: hsl(14, 88%, 65%);
+    --softblue: hsl(240, 73%, 65%);
     --vdgrayblue: hsl(237, 12%, 33%);
     --darkgrayblue: hsl(240, 6%, 50%);
     --lightgrayblue: hsl(240, 5%, 91%);
@@ -19,14 +19,42 @@
     src: url('./fonts/KumbhSans-Bold.ttf');
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(var(--softviolet), var(--softblue));
+}
+hr {
+    border: 0.1rem solid var(--lightgrayblue);
+}
 
 .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
     max-width: 24rem;
 }
 
-img.illustration {
-    height: 20rem;
-    width: 20rem;
+.images {
+    position: relative;
+}
+.images .illustration {
+    vertical-align: bottom;
+}
+.images .illustration-shadow {
+    width: 100%;
+    top: 10rem;
+    left: 0;
+    position:absolute;   
+
 }
 
 .attribution { 
