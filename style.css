@@ -35,16 +35,15 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     margin: 2rem;
-    background-color: white;
-    border-radius: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-    max-width: 24rem;
+    
+    max-width: 30rem;
 }
 
 .images {
     position: relative;
+    z-index: 10;
+    width: 85%;
+    left: 2rem;
 }
 .images .illustration {
     vertical-align: bottom;
@@ -57,9 +56,53 @@ hr {
 
 }
 
+.information {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 80px;
+    margin-top: -95px;
+}
+.information h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: KumbhSansBold, sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.information .question {
+    font-size: 1.15rem;
+    font-weight: 400;
+    font-family: KumbhSansRegular, sans-serif;
+    color: var(--vdgrayblue);
+    padding-top: 0.85rem;
+    padding-bottom: 1rem;
+}
+.information .question:hover {
+    cursor: pointer;
+}
+.information .question-one:focus ~ .answer-one {
+    display: block;
+}
+
+.information .answer {
+    display: none;
+    font-weight: 400;
+    font-family: KumbhSansRegular;
+    color: var(--darkgrayblue);
+    padding-bottom: 1rem;
+}
+
+
+
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: white; 
 }
